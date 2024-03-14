@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tirnagle</title>
+</head>
+<body>
+    <script>
+        var a = mez();
+        var b = mez();
+        var c = mez();
+
+        function mez(){
+            var y = 0
+            while(y==0){
+                var x = prompt('Enter the measurement of the triangle side');
+                if (isNaN(x)){
+                    window.alert('Input numbers only please');
+                }
+                else{
+                    y=1;
+                    return x;
+                }
+            }
+        }
+        determineTriangle(a,b,c);
+        function determineTriangle(){
+            if(a===b && b===c){
+                window.alert('Your tringle is Equilteral.');
+            }
+            else if(a===b||b===c||a===c){
+                window.alert('Your tringle is Isosceles.');
+            }
+            else{
+                window.alert('Your tringle is Scalene.');
+            }
+        }
+    </script>
+</body>
+</html>
